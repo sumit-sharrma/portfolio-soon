@@ -195,6 +195,10 @@ html{
 
     .img{
         display: none;
+
+        &__github{
+            display: none;
+        }
     }
 
     .social{

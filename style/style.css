@@ -298,6 +298,9 @@ html {
   .img {
     display: none;
   }
+  .img__github {
+    display: none;
+  }
   .social {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
