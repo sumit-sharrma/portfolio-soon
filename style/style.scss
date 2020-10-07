@@ -31,6 +31,14 @@ html{
         &-name{
             display: block;
         }
+        
+        &-wave{
+            animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+            animation-duration: 2.5s;        /* Change to speed up or slow down */
+            animation-iteration-count: infinite;  /* Never stop waving :) */
+            transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+            display: inline-block;
+        }
     }
 
     p{
@@ -117,6 +125,35 @@ html{
     &__credit{
         margin-top: 1em;
     }
+
+    &__github{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: #fff;
+        border: 1.5px solid #fff;
+        padding: 9px 16px;
+        border-radius: 4px;
+        text-decoration: none;
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        color: #2EA44F;
+        font-weight: 800;
+        margin-left: auto;
+        margin-bottom: auto;
+        transition: border .5s ease;
+
+        &:hover{
+            border: 1.5px solid #2EA44F;
+        }
+
+        svg{
+            margin-right: 10px;
+        }
+    }
 }
 
 .footer{
@@ -136,6 +173,17 @@ html{
         color: #1a1a1a;
         margin-right: 32px;
     }
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+    10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+    20% { transform: rotate(-8.0deg) }
+    30% { transform: rotate(14.0deg) }
+    40% { transform: rotate(-4.0deg) }
+    50% { transform: rotate(10.0deg) }
+    60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+    100% { transform: rotate( 0.0deg) }
 }
 
 @media screen and (max-width: 1060px){

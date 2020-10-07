@@ -50,7 +50,7 @@
         
         <div class="wrap">
             <div class="content">
-                <h1 class="content__head">Hi <span>👋</span>
+                <h1 class="content__head">Hi <span class="content__head-wave">👋</span>
                     <span class="content__head-name">I am Sumit Sharma</span>
                 </h1>
                 <p>A self-taught design-driven developer.</p>
@@ -59,23 +59,30 @@
 
                 <ul class="social">
                     <li>
-                        <a href="https://medium.com/@sumitss92" class="social__link social__medium" target="_blank">Medium</a>
+                        <a href="https://medium.com/@sumitss92" onclick="_trackEvent(social_medium_btn, clicked)" class="social__link social__medium" target="_blank">Medium</a>
                     </li>
                     <li>
-                        <a href="https://dribbble.com/sumitss92" class="social__link social__dribbble" target="_blank">Dribbble</a>
+                        <a href="https://dribbble.com/sumitss92" onclick="_trackEvent(social_dribbble_btn, clicked)" class="social__link social__dribbble" target="_blank">Dribbble</a>
                     </li>
                     <li>
-                        <a href="https://www.behance.net/sumitsp04bb65" class="social__link social__behance" target="_blank">Behance</a>
+                        <a href="https://www.behance.net/sumitsp04bb65" onclick="_trackEvent(social_behance_btn, clicked)" class="social__link social__behance" target="_blank">Behance</a>
                     </li>
                 </ul>
 
                 <div class="footer">
-                    <a class="footer__links" target="_blank" href="https://www.linkedin.com/in/sumit-sharma-a7719447/">Linkedin</a>
-                    <a class="footer__links" target="_blank" href="https://www.instagram.com/sumit_sharrma/">Instagram</a>
+                    <a class="footer__links" onclick="_trackEvent(social_linkedin_btn, clicked)" target="_blank" href="https://www.linkedin.com/in/sumit-sharma-a7719447/">Linkedin</a>
+                    <a class="footer__links" onclick="_trackEvent(social_instagram_btn, clicked)" target="_blank" href="https://www.instagram.com/sumit_sharrma/">Instagram</a>
                 </div>
 
             </div>
             <div class="img">
+                <a onclick="_trackEvent(github_fork_btn, clicked)" class="img__github" href="https://github.com/sumit-sharrma/portfolio-soon">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.0002 2.49885e-09C7.62568 -5.30572e-05 5.32858 0.844883 3.52001 2.38361C1.71145 3.92233 0.509451 6.05442 0.129123 8.39833C-0.251205 10.7422 0.214956 13.145 1.44419 15.1766C2.67342 17.2083 4.58549 18.7362 6.83825 19.487C7.33825 19.575 7.52525 19.275 7.52525 19.012C7.52525 18.775 7.51325 17.987 7.51325 17.15C5.00025 17.612 4.35025 16.537 4.15025 15.975C3.92839 15.4278 3.57658 14.9428 3.12525 14.562C2.77525 14.375 2.27525 13.912 3.11225 13.9C3.43213 13.9346 3.73894 14.0459 4.00668 14.2243C4.27442 14.4027 4.49518 14.6431 4.65025 14.925C4.78698 15.1707 4.97084 15.387 5.19131 15.5614C5.41178 15.7359 5.66451 15.8652 5.93503 15.9418C6.20554 16.0185 6.48853 16.041 6.76775 16.0081C7.04698 15.9752 7.31697 15.8875 7.56225 15.75C7.60556 15.2414 7.83231 14.7658 8.20024 14.412C5.97524 14.162 3.65025 13.3 3.65025 9.475C3.63608 8.48098 4.00282 7.51921 4.67525 6.787C4.36956 5.92322 4.40533 4.97529 4.77525 4.137C4.77525 4.137 5.61225 3.875 7.52525 5.162C9.16153 4.71195 10.889 4.71195 12.5252 5.162C14.4372 3.862 15.2752 4.137 15.2752 4.137C15.6453 4.97527 15.681 5.92323 15.3752 6.787C16.0497 7.51795 16.4168 8.48056 16.4002 9.475C16.4002 13.312 14.0622 14.162 11.8372 14.412C12.0759 14.6539 12.2597 14.9443 12.3762 15.2635C12.4926 15.5827 12.5391 15.9233 12.5122 16.262C12.5122 17.6 12.5002 18.675 12.5002 19.012C12.5002 19.275 12.6872 19.587 13.1872 19.487C15.4359 18.7299 17.3422 17.1984 18.5661 15.1658C19.7899 13.1331 20.2516 10.7317 19.8686 8.39019C19.4857 6.04866 18.2831 3.91943 16.4755 2.38258C14.6678 0.84573 12.3729 0.00129006 10.0002 2.49885e-09V2.49885e-09Z" fill="#1E1E1E"/>
+                    </svg>
+                        
+                    <span>fork</span>
+                </a>
                 <img loading="lazy" src="./images/img-4.jpg" alt="">
                 <span class="img__credit">Photo by <a href="https://unsplash.com/@nkachanovskyyy?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Nikita Kachanovsky</a> on <a href="https://unsplash.com/s/photos/design?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
             </div>
