@@ -209,6 +209,7 @@ html {
   font-size: 1.2rem;
   font-weight: 600;
   text-transform: uppercase;
+  cursor: pointer;
   letter-spacing: 2px;
   text-decoration: none;
   color: #1a1a1a;
