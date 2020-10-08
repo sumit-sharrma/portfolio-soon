@@ -87,6 +87,7 @@ html {
 .social__link {
   padding: .8em 2.2em;
   display: inline-block;
+  cursor: pointer;
   text-decoration: none;
   color: #fff;
   border-radius: 1px;
@@ -167,6 +168,7 @@ html {
   padding: 9px 16px;
   border-radius: 4px;
   text-decoration: none;
+  cursor: pointer;
   font-size: 1.2rem;
   letter-spacing: 2px;
   text-transform: uppercase;
