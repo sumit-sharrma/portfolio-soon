@@ -5,15 +5,61 @@
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
     <head>
-         <!-- Global site tag (gtag.js) - Google Analytics -->
-         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179772800-1"></script>
-         <script>
+
+        <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179772800-1"></script> -->
+        <script>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+            // gtag('js', new Date());
     
-            gtag('config', 'UA-179772800-1');
-         </script>
+            // gtag('config', 'UA-179772800-1');
+
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-179772800-1', 'auto');
+            ga('send', 'pageview');
+
+            const social_links ={
+                medium: "https://medium.com/@sumitss92",
+                dribbble: "https://dribbble.com/sumitss92",
+                behance: "https://www.behance.net/sumitsp04bb65",
+                github: "https://github.com/sumit-sharrma/portfolio-soon",
+                linkedin: "https://www.linkedin.com/in/sumit-sharma-a7719447/",
+                instagram: "https://www.instagram.com/sumit_sharrma/"
+            }
+
+            trackGAforMenusOpeningNewTab = (name, socialName) =>{
+
+                ga('send', 'event', name, 'clicked')
+                window.open(social_links[socialName], "_blank")
+
+            }
+
+
+        </script>
 
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,7 +67,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./style/style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -30,7 +76,7 @@
         
         <div class="wrap">
             <div class="content">
-                <h1 class="content__head">Hi <span>👋</span>
+                <h1 class="content__head">Hi <span class="content__head-wave">👋</span>
                     <span class="content__head-name">I am Sumit Sharma</span>
                 </h1>
                 <p>A self-taught design-driven developer.</p>
@@ -39,23 +85,30 @@
 
                 <ul class="social">
                     <li>
-                        <a href="https://medium.com/@sumitss92" class="social__link social__medium" target="_blank">Medium</a>
+                        <a onclick="trackGAforMenusOpeningNewTab('social_medium_btn', 'medium')" class="social__link social__medium" target="_blank">Medium</a>
                     </li>
                     <li>
-                        <a href="https://dribbble.com/sumitss92" class="social__link social__dribbble" target="_blank">Dribbble</a>
+                        <a onclick="trackGAforMenusOpeningNewTab('social_dribbble_btn', 'dribbble')" class="social__link social__dribbble" target="_blank">Dribbble</a>
                     </li>
                     <li>
-                        <a href="https://www.behance.net/sumitsp04bb65" class="social__link social__behance" target="_blank">Behance</a>
+                        <a onclick="trackGAforMenusOpeningNewTab('social_behance_btn', 'behance')" class="social__link social__behance" target="_blank">Behance</a>
                     </li>
                 </ul>
 
                 <div class="footer">
-                    <a class="footer__links" href="https://www.linkedin.com/in/sumit-sharma-a7719447/">Linkedin</a>
-                    <a class="footer__links" href="https://www.instagram.com/sumit_sharrma/">Instagram</a>
+                    <a class="footer__links" onclick="trackGAforMenusOpeningNewTab('social_linkedin_btn', 'linkedin')" target="_blank">Linkedin</a>
+                    <a class="footer__links" onclick="trackGAforMenusOpeningNewTab('social_instagram_btn', 'instagram')" target="_blank">Instagram</a>
                 </div>
 
             </div>
             <div class="img">
+                <a onclick="trackGAforMenusOpeningNewTab('github_fork_btn', 'github')" target="_blank" class="img__github">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.0002 2.49885e-09C7.62568 -5.30572e-05 5.32858 0.844883 3.52001 2.38361C1.71145 3.92233 0.509451 6.05442 0.129123 8.39833C-0.251205 10.7422 0.214956 13.145 1.44419 15.1766C2.67342 17.2083 4.58549 18.7362 6.83825 19.487C7.33825 19.575 7.52525 19.275 7.52525 19.012C7.52525 18.775 7.51325 17.987 7.51325 17.15C5.00025 17.612 4.35025 16.537 4.15025 15.975C3.92839 15.4278 3.57658 14.9428 3.12525 14.562C2.77525 14.375 2.27525 13.912 3.11225 13.9C3.43213 13.9346 3.73894 14.0459 4.00668 14.2243C4.27442 14.4027 4.49518 14.6431 4.65025 14.925C4.78698 15.1707 4.97084 15.387 5.19131 15.5614C5.41178 15.7359 5.66451 15.8652 5.93503 15.9418C6.20554 16.0185 6.48853 16.041 6.76775 16.0081C7.04698 15.9752 7.31697 15.8875 7.56225 15.75C7.60556 15.2414 7.83231 14.7658 8.20024 14.412C5.97524 14.162 3.65025 13.3 3.65025 9.475C3.63608 8.48098 4.00282 7.51921 4.67525 6.787C4.36956 5.92322 4.40533 4.97529 4.77525 4.137C4.77525 4.137 5.61225 3.875 7.52525 5.162C9.16153 4.71195 10.889 4.71195 12.5252 5.162C14.4372 3.862 15.2752 4.137 15.2752 4.137C15.6453 4.97527 15.681 5.92323 15.3752 6.787C16.0497 7.51795 16.4168 8.48056 16.4002 9.475C16.4002 13.312 14.0622 14.162 11.8372 14.412C12.0759 14.6539 12.2597 14.9443 12.3762 15.2635C12.4926 15.5827 12.5391 15.9233 12.5122 16.262C12.5122 17.6 12.5002 18.675 12.5002 19.012C12.5002 19.275 12.6872 19.587 13.1872 19.487C15.4359 18.7299 17.3422 17.1984 18.5661 15.1658C19.7899 13.1331 20.2516 10.7317 19.8686 8.39019C19.4857 6.04866 18.2831 3.91943 16.4755 2.38258C14.6678 0.84573 12.3729 0.00129006 10.0002 2.49885e-09V2.49885e-09Z" fill="#1E1E1E"/>
+                    </svg>
+                        
+                    <span>fork</span>
+                </a>
                 <img loading="lazy" src="./images/img-4.jpg" alt="">
                 <span class="img__credit">Photo by <a href="https://unsplash.com/@nkachanovskyyy?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Nikita Kachanovsky</a> on <a href="https://unsplash.com/s/photos/design?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
             </div>
