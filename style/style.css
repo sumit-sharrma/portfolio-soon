@@ -128,6 +128,15 @@ html {
           box-shadow: 3px 4px 0 #061f4f;
 }
 
+.social__sneak {
+  background: #df8817;
+}
+
+.social__sneak:hover {
+  -webkit-box-shadow: 3px 4px 0 #a9660f;
+          box-shadow: 3px 4px 0 #a9660f;
+}
+
 .img {
   display: -webkit-box;
   display: -ms-flexbox;
